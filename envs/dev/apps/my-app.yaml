@@ -5,7 +5,7 @@ metadata:
   name: my-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: 196022043749.dkr.ecr.eu-west-2.amazonaws.com/antonputra/app-lesson-268
+    argocd-image-updater.argoproj.io/image-list: 196022043749.dkr.ecr.eu-west-2.amazonaws.com/justcatchingrye/app-lesson-268
     argocd-image-updater.argoproj.io/users.update-strategy: semver
     argocd-image-updater.argoproj.io/write-back-method: git
   finalizers:
@@ -13,7 +13,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:antonputra/k8s-lesson-268.git
+    repoURL: git@github.com:justCatchingRye/k8s-lesson-268.git
     targetRevision: HEAD
     path: envs/dev/my-app
   destination:
